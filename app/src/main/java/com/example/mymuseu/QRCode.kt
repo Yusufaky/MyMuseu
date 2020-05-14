@@ -13,6 +13,8 @@ class QRCode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_q_r_code)
+        supportActionBar!!.title= "QRCODE"//getString(R.string.contactos)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         btn_scan.setOnClickListener {
             val scanner = IntentIntegrator(this)
             scanner.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
@@ -26,9 +28,10 @@ class QRCode : AppCompatActivity() {
             val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
             if (result != null) {
                 if (result.contents == null) {
-                    Toast.makeText(this, "Cancelled", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Erro ao fazer scan", Toast.LENGTH_LONG).show()
                 } else {
-                    Toast.makeText(this, "Scanned: " + result.contents, Toast.LENGTH_LONG).show()
+                    val intent = Intent(this, QRcode_Quadro::class.java)
+                    startActivity(intent)
                 }
             } else {
                 super.onActivityResult(requestCode, resultCode, data)

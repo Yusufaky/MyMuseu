@@ -14,9 +14,19 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val button = findViewById<Button>(R.id.btn_menu)
-        button.setOnClickListener{
+        val button_qrcode = findViewById<Button>(R.id.btn_qrcode)
+        button_qrcode.setOnClickListener{
             val intent = Intent(this, QRCode::class.java)
+            startActivity(intent)
+        }
+        val button_opiniao = findViewById<Button>(R.id.btn_opiniao)
+        button_opiniao.setOnClickListener{
+            val intent = Intent(this, Opiniao::class.java)
+            startActivity(intent)
+        }
+        val button_mapa = findViewById<Button>(R.id.btn_mapa)
+        button_mapa.setOnClickListener{
+            val intent = Intent(this, Mapa::class.java)
             startActivity(intent)
         }
     }
