@@ -28,7 +28,7 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
     }
     override fun onMapReady(map: GoogleMap?) {
         googleMap = map?: return
-        val mapSettings = map?.uiSettings
+        //val mapSettings = map?.uiSettings
         val museutraje = LatLng(41.69293, -8.82855)
 
         googleMap.addMarker(
