@@ -13,7 +13,7 @@ class QRCode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_q_r_code)
-        supportActionBar!!.title= "QRCODE"//getString(R.string.contactos)
+        supportActionBar!!.title = "QRCODE"//getString(R.string.contactos)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         btn_scan.setOnClickListener {
             val scanner = IntentIntegrator(this)
@@ -28,13 +28,18 @@ class QRCode : AppCompatActivity() {
             val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
             if (result != null) {
                 if (result.contents == null) {
-                    Toast.makeText(this, "Erro ao fazer scan", Toast.LENGTH_LONG).show()
-                } else {
+                    Toast.makeText(this, "Erro ao Ler o QRCODE", Toast.LENGTH_LONG).show()
+                };if (result.contents == "Quadro" || result.contents == "quadro" || result.contents == "QUADRO") {
                     val intent = Intent(this, QRcode_Quadro::class.java)
                     startActivity(intent)
+                };if (result.contents == "Sala" || result.contents == "sala" || result.contents == "SALA") {
+                    val intent = Intent(this, QRcode_Sala::class.java)
+                    startActivity(intent)
+                };if (result.contents != "Sala" && result.contents != "Quadro" && result.contents != "quadro" && result.contents != "sala" && result.contents != "SALA" && result.contents != "QUADRO") {
+                    Toast.makeText(this, "Erro ao Ler o QRCODE", Toast.LENGTH_LONG).show()
+                } else {
+                    super.onActivityResult(requestCode, resultCode, data)
                 }
-            } else {
-                super.onActivityResult(requestCode, resultCode, data)
             }
         }
     }
