@@ -5,15 +5,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".QRCode">
+
     <Button
         android:id="@+id/btn_scan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="208dp"
+        android:background="@drawable/designbutton"
         android:text="Fazer o Scan"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgQRcode" />
+
+    <ImageView
+        android:id="@+id/imgQRcode"
+        android:layout_width="205dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qrcode_Descricao"
+        app:srcCompat="@drawable/qrcode" />
+
+    <TextView
+        android:id="@+id/titulo_Qrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Leitor de QRCode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/qrcode_Descricao"
+        android:layout_width="303dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="40dp"
+        android:text="Para uma melhor experiencia nas visita do museu está disponivel uma serie de qrcodes onde estão disponivel informações sobre salas ou sobre coleções dependendo do que for lido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_Qrcode" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
