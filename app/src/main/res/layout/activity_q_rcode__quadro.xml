@@ -14,7 +14,7 @@
         android:layout_marginTop="70dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_Quadro"
-        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+        app:srcCompat="@drawable/grito" />
 
     <TextView
         android:id="@+id/nomeQuadro_Quadro"
