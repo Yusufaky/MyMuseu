@@ -13,8 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QRcode_Sala"
-            android:parentActivityName=".QRCode"/>
+        <activity android:name=".Novaopiniao"></activity>
+        <activity
+            android:name=".QRcode_Sala"
+            android:parentActivityName=".QRCode" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
