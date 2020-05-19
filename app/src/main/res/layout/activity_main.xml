@@ -14,6 +14,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:text="MAPA"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         android:background="@drawable/designbutton"
         app:layout_constraintEnd_toStartOf="@+id/btn_qrcode"
         app:layout_constraintStart_toEndOf="@+id/btn_opiniao"
@@ -26,7 +28,9 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:text="Opiniao"
+        android:fontFamily="@string/fonte"
         android:background="@drawable/designbutton"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMain" />
 
@@ -38,6 +42,8 @@
         android:layout_marginEnd="29dp"
         android:text="QRCODE"
         android:background="@drawable/designbutton"
+        android:textColor="@color/corTexto"
+        android:fontFamily="@string/fonte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMain" />
 
@@ -55,7 +61,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Bem Vindo ao My Museum"
+        android:text="@string/titulo_Main"
+        android:textSize="@dimen/titulos"
+        android:textColor="@color/corTexto"
+        android:fontFamily="@string/fonte"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

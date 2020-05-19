@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MyMuseu</string>
+    <string name="fonte" translatable="false">sans-serif-medium</string>
+    <string name="desc_QRcode">Para uma melhor experiencia nas visita do museu está disponivel uma serie de qrcodes onde estão disponivel informações sobre salas ou sobre coleções dependendo do que for lido</string>
+    <string name="btn_QRcode">Fazer o Scan</string>
+    <string name="titulo_Main">Bem Vindo ao My Museum</string>
 </resources>

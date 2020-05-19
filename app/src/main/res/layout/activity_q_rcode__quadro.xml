@@ -18,21 +18,27 @@
 
     <TextView
         android:id="@+id/nomeQuadro_Quadro"
-        android:layout_width="120dp"
-        android:layout_height="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:text="Nome do Quadro:"
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/titulo_Quadro"
-        android:layout_width="99dp"
-        android:layout_height="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:text="Descobrimetos"
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toEndOf="@+id/nomeQuadro_Quadro"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,6 +49,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="Pintor:"
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_Quadro" />
 
@@ -53,16 +62,22 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:text="Pablo Pícasso"
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toEndOf="@+id/pintor_Quadro"
         app:layout_constraintTop_toBottomOf="@+id/img_Quadro" />
 
     <TextView
         android:id="@+id/descricaoTexto_Quadro"
-        android:layout_width="214dp"
-        android:layout_height="102dp"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:text="I just met this girl on the subway the other day. We exchanged contacts. Pretty sure we had a nice conversation."
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toEndOf="@+id/descricao_Quadro"
         app:layout_constraintTop_toBottomOf="@+id/descricaoPintor_Quadro" />
 
@@ -73,6 +88,9 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
         android:text="Descrição"
+        android:textSize="@dimen/descricoes"
+        android:fontFamily="@string/fonte"
+        android:textColor="@color/corTexto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pintor_Quadro" />
 

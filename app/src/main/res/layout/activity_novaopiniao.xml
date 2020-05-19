@@ -15,24 +15,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Nome"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/Opiniao_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="E-mail"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/Opiniao_comentario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Opinião"
+            android:inputType="textPersonName" />
 
         <RatingBar
             android:id="@+id/ratingBar"
@@ -43,6 +43,9 @@
             android:id="@+id/button_opiniao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:fontFamily="@string/fonte"
+            android:textColor="@color/corTexto"
+            android:background="@drawable/designbutton"
+            android:text="Enviar" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
