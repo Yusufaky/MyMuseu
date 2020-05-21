@@ -15,7 +15,7 @@ class Novaopiniao : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_novaopiniao)
-        supportActionBar!!.title = "Deixe a Opinião"//getString(R.string.contactos)
+        supportActionBar!!.title = getString(R.string.novaOpiniao)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
 
 

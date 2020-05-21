@@ -20,9 +20,16 @@
 
     <Button
         android:id="@+id/button_add_opiniao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_width="157dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/designbutton"
+        android:text="@string/deixar_comentario_List"
+        android:textColor="@color/corTexto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/list_view" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

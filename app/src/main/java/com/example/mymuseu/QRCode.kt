@@ -13,7 +13,7 @@ class QRCode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_q_r_code)
-        supportActionBar!!.title = "QRCODE"//getString(R.string.contactos)
+        supportActionBar!!.title =getString(R.string.QRcodeMain)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         btn_scan.setOnClickListener {
             val scanner = IntentIntegrator(this)

@@ -1,7 +1,33 @@
 <resources>
-    <string name="app_name">MyMuseu</string>
+    <string name="app_name">My Museu</string>
     <string name="fonte" translatable="false">sans-serif-medium</string>
     <string name="desc_QRcode">Para uma melhor experiencia nas visita do museu está disponivel uma serie de qrcodes onde estão disponivel informações sobre salas ou sobre coleções dependendo do que for lido</string>
     <string name="btn_QRcode">Fazer o Scan</string>
     <string name="titulo_Main">Bem Vindo ao My Museum</string>
+    <string name="enviar_novaOpiniao">Enviar</string>
+    <string name="opiniao_txt">Opinião</string>
+    <string name="e_mail_txt">E-mail</string>
+    <string name="nome_txt">Nome</string>
+    <string name="nome_do_quadro_QRCODE">Título:</string>
+    <string name="descobrimetos_QRCODE">O Grito</string>
+    <string name="pintor_QRCODE">Pintor:</string>
+    <string name="nome_pinto_QRCODE" translatable="false">Edvard Munch</string>
+    <string name="decricao_QRCODE">O quadro O Grito é uma obra de arte expressionista que simboliza o sentimento de angústia do ser humano.</string>
+    <string name="descri_o_QRCODE">Descrição</string>
+    <string name="deixar_comentario_List">Deixar Comentário</string>
+    <string name="titulo_QRCODE">Leitor de QRCode</string>
+    <string name="mapa_btn" translatable="false">Mapa</string>
+    <string name="opiniao_btn">Opinião</string>
+    <string name="qrcode_btn" translatable="false">QRCODE</string>
+    <string name="titulo_Sala_QRCODE">2º Guerra Mundial</string>
+    <string name="descricao_Sala_QRCODE">Sala explicativa da 2º Guerra mundial possui 40 quadros tendo como tempo medio de visita 20 minutos.</string>
+    <string name="exposi_o_temporaria_Main">Exposição Temporaria:</string>
+    <string name="quadros_de_edvard_munch">Quadros de Edvard Munch</string>
+    <string name="os_descobrimentos">Os Descobrimentos</string>
+    <string name="novaOpiniao">Deixe a Opinião</string>
+    <string name="OpiniaoMain">Opinião</string>
+    <string name="QRcodeMain" translatable="false">QRCODE</string>
+    <string name="QRCODEQUADRO">QRCode Quadro</string>
+    <string name="QRCODESALA">QRCode Sala</string>
+    <string name="MapaMain" translatable="false">Mapa</string>
 </resources>

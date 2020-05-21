@@ -13,39 +13,39 @@
         <EditText
             android:id="@+id/Opiniao_nome"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="80dp"
             android:ems="10"
-            android:hint="Nome"
+            android:hint="@string/nome_txt"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/Opiniao_email"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="74dp"
             android:ems="10"
-            android:hint="E-mail"
+            android:hint="@string/e_mail_txt"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/Opiniao_comentario"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="75dp"
             android:ems="10"
-            android:hint="Opinião"
+            android:hint="@string/opiniao_txt"
             android:inputType="textPersonName" />
 
         <RatingBar
             android:id="@+id/ratingBar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="73dp" />
 
         <Button
             android:id="@+id/button_opiniao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@string/fonte"
-            android:textColor="@color/corTexto"
             android:background="@drawable/designbutton"
-            android:text="Enviar" />
+            android:fontFamily="@string/fonte"
+            android:text="@string/enviar_novaOpiniao"
+            android:textColor="@color/corTexto" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

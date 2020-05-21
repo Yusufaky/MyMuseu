@@ -13,7 +13,7 @@ class Opiniao : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_opiniao)
-        supportActionBar!!.title = "Opiniao"//getString(R.string.contactos)
+        supportActionBar!!.title =getString(R.string.OpiniaoMain)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         val adapter = MyCustomAdapter(this)
 

@@ -12,21 +12,21 @@ class MyCustomAdapter(context: Context) : BaseAdapter() {
 
     val mContext: Context
     val nomes = arrayListOf<String>(
-        "Donald Trump", "Steve Jobs", "Tim Cook", "Mark Zuckerberg", "Barack Obama"
+        "João Garcia", "Marcos Costa", "Ana Ribeiro", "António Saleiro", "Barack Obama"
     )
 
     val comentarios = arrayListOf<String>(
-        "Muitos Grandes", "Algunns", "Poucos", "Assim assim", "NAda"
+        "Uma boa visita", "Gostei bastante", "Uma boa aplicação", "Uma visita boa", "Bom"
     )
     val classificacao = arrayListOf<String>(
-        "5", "5", "4", "4", "2"
+        "5", "4", "5", "2", "3"
     )
 
     fun update(nome: String, comentario: String, n_classificacao: String) {
         this.nomes.add(nome)
         this.comentarios.add(comentario)
         this.classificacao.add(n_classificacao)
-        Toast.makeText(this.mContext, this.nomes.get(5), Toast.LENGTH_LONG).show()
+        //Toast.makeText(this.mContext, this.nomes.get(5), Toast.LENGTH_LONG).show()
 
         // adicionou
 

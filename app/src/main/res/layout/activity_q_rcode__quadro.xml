@@ -12,6 +12,7 @@
         android:layout_height="306dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="70dp"
+        android:textSize="@dimen/tamanho_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_Quadro"
         app:srcCompat="@drawable/grito" />
@@ -22,10 +23,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
-        android:text="Nome do Quadro:"
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/nome_do_quadro_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,10 +36,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
-        android:text="Descobrimetos"
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/descobrimetos_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
+        app:layout_constraintBottom_toTopOf="@+id/img_Quadro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toEndOf="@+id/nomeQuadro_Quadro"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,10 +52,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="Pintor:"
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/pintor_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_Quadro" />
 
@@ -59,12 +63,12 @@
         android:id="@+id/descricaoPintor_Quadro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="20dp"
-        android:text="Pablo Pícasso"
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/nome_pinto_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
         app:layout_constraintStart_toEndOf="@+id/pintor_Quadro"
         app:layout_constraintTop_toBottomOf="@+id/img_Quadro" />
 
@@ -74,10 +78,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
-        android:text="I just met this girl on the subway the other day. We exchanged contacts. Pretty sure we had a nice conversation."
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/decricao_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
         app:layout_constraintStart_toEndOf="@+id/descricao_Quadro"
         app:layout_constraintTop_toBottomOf="@+id/descricaoPintor_Quadro" />
 
@@ -87,10 +91,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="32dp"
-        android:text="Descrição"
-        android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
+        android:text="@string/descri_o_QRCODE"
         android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pintor_Quadro" />
 

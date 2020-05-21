@@ -21,7 +21,7 @@ class Mapa : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mapa)
-        supportActionBar!!.title= "Mapa"//getString(R.string.contactos)
+        supportActionBar!!.title= getString(R.string.MapaMain)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         val mapFragment = supportFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment
         mapFragment.getMapAsync(this)

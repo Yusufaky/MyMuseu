@@ -12,16 +12,17 @@
         android:layout_height="306dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="70dp"
+        android:textSize="@dimen/tamanho_img"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo_Quadro"
-        app:srcCompat="@drawable/padraodosdescobrimentos" />
+        app:srcCompat="@drawable/segundaguerra" />
 
     <TextView
         android:id="@+id/titulo_Quadro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="70dp"
-        android:text="Descobrimetos"
+        android:text="@string/titulo_Sala_QRCODE"
         android:fontFamily="@string/fonte"
         android:textColor="@color/corTexto"
         android:textSize="@dimen/titulos"
@@ -39,7 +40,7 @@
         android:textSize="@dimen/descricoes"
         android:fontFamily="@string/fonte"
         android:textColor="@color/corTexto"
-        android:text="Sala explicativa da 2º Guerra mundial possui 40 quadros tendo como tempo medio de visita 20 minutos."
+        android:text="@string/descricao_Sala_QRCODE"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img_Sala" />
 

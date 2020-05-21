@@ -13,18 +13,27 @@
 
         <TextView
             android:id="@+id/comentario"
+            android:textColor="@color/corTexto"
+            android:fontFamily="@string/fonte"
             android:layout_width="158dp"
+            android:textSize="@dimen/descricoes"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/classificacao"
+            android:textColor="@color/corTexto"
+            android:fontFamily="@string/fonte"
+            android:textSize="@dimen/descricoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
             android:id="@+id/nome"
+            android:textColor="@color/corTexto"
+            android:fontFamily="@string/fonte"
+            android:textSize="@dimen/descricoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="TextView" />
