@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Opiniao">
+    android:background="@color/corFundo"
+    tools:context=".Opiniao"
+    android:padding="16dp">
 
 
     <ListView
@@ -22,7 +24,7 @@
         android:id="@+id/button_add_opiniao"
         android:layout_width="157dp"
         android:layout_height="53dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="500dp"
         android:background="@drawable/designbutton"
         android:text="@string/deixar_comentario_List"
         android:textColor="@color/corTexto"

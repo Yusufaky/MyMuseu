@@ -2,6 +2,7 @@
 <resources>
     <dimen name="titulos">30sp</dimen>
     <dimen name="descricoes">18dp</dimen>
-    <dimen name="margimMenu">20dp</dimen>
+    <dimen name="main">25dp</dimen>
+    <dimen name="margimMenu">15dp</dimen>
     <dimen name="tamanho_img">200dp</dimen>
 </resources>

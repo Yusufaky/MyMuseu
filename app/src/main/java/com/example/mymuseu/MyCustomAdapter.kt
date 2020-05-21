@@ -13,16 +13,16 @@ class MyCustomAdapter(context: Context) : BaseAdapter() {
 
     val mContext: Context
     val nomes = arrayListOf<String>(
-        "João Garcia", "Marcos Costa", "Ana Ribeiro", "António Saleiro", "Barack Obama"
+        "Marcos Costa",  "António Saleiro", "Daniela Freitas"
     )
 
     val comentarios = arrayListOf<String>(
-        "Uma boa visita", "Gostei bastante", "Uma boa aplicação", "Uma visita boa", "Bom"
+       "Gostei bastante", "Uma visita boa", "Boa Aplicação"
     )
     val classificacao = arrayListOf<Float>(
 
 
-        5.0F, 4.0F, 5.0F, 2.0F, 3.0F
+       5.0F, 5.0F, 3.0F
     )
 
     fun update(nome: String, comentario: String, n_classificacao: Float) {

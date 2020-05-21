@@ -25,4 +25,6 @@
     <string name="QRCODESALA">QRCode  Room</string>
     <string name="novaOpiniao">" Leave Opinion"</string>
     <string name="OpiniaoMain">Opinion</string>
+    <string name="naoPreenche">Some of the fields are not yet filled out or the email entered is not valid</string>
+    <string name="naoEmail">The email entered is not valid</string>
 </resources>

@@ -4,49 +4,73 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/corFundo"
     tools:context=".Novaopiniao">
-    <LinearLayout
+
+    <EditText
+        android:id="@+id/Opiniao_nome"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/nome_txt"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/Opiniao_nome"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:ems="10"
-            android:hint="@string/nome_txt"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/Opiniao_email"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/e_mail_txt"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Opiniao_nome" />
 
-        <EditText
-            android:id="@+id/Opiniao_email"
-            android:layout_width="match_parent"
-            android:layout_height="74dp"
-            android:ems="10"
-            android:hint="@string/e_mail_txt"
-            android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/Opiniao_comentario"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/opiniao_txt"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Opiniao_email" />
 
-        <EditText
-            android:id="@+id/Opiniao_comentario"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:ems="10"
-            android:hint="@string/opiniao_txt"
-            android:inputType="textPersonName" />
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="86dp"
+        android:numStars="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Opiniao_comentario" />
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="73dp"
-            android:numStars="5"/>
-
-        <Button
-            android:id="@+id/button_opiniao"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/designbutton"
-            android:fontFamily="@string/fonte"
-            android:text="@string/enviar_novaOpiniao"
-            android:textColor="@color/corTexto" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/button_opiniao"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/designbutton"
+        android:fontFamily="@string/fonte"
+        android:text="@string/enviar_novaOpiniao"
+        android:textColor="@color/corTexto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

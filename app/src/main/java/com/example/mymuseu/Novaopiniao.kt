@@ -40,10 +40,10 @@ class Novaopiniao : AppCompatActivity() {
 
           if(nome.isEmpty()||comentarios.isEmpty() || email.isEmpty()|| validacao ==1){
                 if(validacao ==0) {
-                    Toast.makeText(this, "Algum dos campos não se encontram ainda preenchidos ou o email inserido não é válido",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.naoPreenche),Toast.LENGTH_LONG).show()
 
                 }else{
-                    Toast.makeText(this, " O email inserido não é válido",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, getString(R.string.naoEmail),Toast.LENGTH_LONG).show()
                 }
 
 

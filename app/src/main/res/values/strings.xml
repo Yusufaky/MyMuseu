@@ -30,4 +30,6 @@
     <string name="QRCODEQUADRO">QRCode Quadro</string>
     <string name="QRCODESALA">QRCode Sala</string>
     <string name="MapaMain" translatable="false">Mapa</string>
+    <string name="naoPreenche" >Algum dos campos não se encontram ainda preenchidos ou o email inserido não é válido</string>
+    <string name="naoEmail" >O email inserido não é válido</string>
 </resources>
