@@ -17,7 +17,7 @@ class MyCustomAdapter(context: Context) : BaseAdapter() {
     )
 
     val comentarios = arrayListOf<String>(
-       "Gostei bastante", "Uma visita boa", "Boa Aplicação"
+       "Gostei bastante", "Uma visita boa pois estava com uma boa organização e a aplicação estava muito bem feita", "Boa Aplicação"
     )
     val classificacao = arrayListOf<Float>(
 
