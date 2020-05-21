@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.RatingBar
 import android.widget.TextView
 import android.widget.Toast
 
@@ -18,11 +19,13 @@ class MyCustomAdapter(context: Context) : BaseAdapter() {
     val comentarios = arrayListOf<String>(
         "Uma boa visita", "Gostei bastante", "Uma boa aplicação", "Uma visita boa", "Bom"
     )
-    val classificacao = arrayListOf<String>(
-        "5", "4", "5", "2", "3"
+    val classificacao = arrayListOf<Float>(
+
+
+        5.0F, 4.0F, 5.0F, 2.0F, 3.0F
     )
 
-    fun update(nome: String, comentario: String, n_classificacao: String) {
+    fun update(nome: String, comentario: String, n_classificacao: Float) {
         this.nomes.add(nome)
         this.comentarios.add(comentario)
         this.classificacao.add(n_classificacao)
@@ -70,8 +73,10 @@ class MyCustomAdapter(context: Context) : BaseAdapter() {
 
         val positionTextView = rowMain.findViewById<TextView>(R.id.comentario)
         positionTextView.text = comentarios.get(position)
-        val classificacaoTextView = rowMain.findViewById<TextView>(R.id.classificacao)
-        classificacaoTextView.text = classificacao.get(position)
+
+      val classificacaoTextView = rowMain.findViewById< RatingBar>(R.id.ratingBar)
+        classificacaoTextView.rating = classificacao.get(position)
+
 
 
 

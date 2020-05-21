@@ -25,13 +25,36 @@ class Novaopiniao : AppCompatActivity() {
             val nome = Opiniao_nome.text.toString()
             val email = Opiniao_email.text.toString()
             val comentarios = Opiniao_comentario.text.toString()
+            val classificacao = ratingBar.rating
+            var validacao = 0
 
-            val intent = Intent(this, Opiniao::class.java)
+                if (android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
 
-            intent.putExtra("nome", nome)
-            intent.putExtra("email", email)
-            intent.putExtra("comentario", comentarios)
-            startActivity(intent)
+                }else{
+                     validacao = 1
+                    //Toast.makeText(this, "emailerrado",Toast.LENGTH_LONG).show()
+                }
+
+
+
+
+          if(nome.isEmpty()||comentarios.isEmpty() || email.isEmpty()|| validacao ==1){
+                if(validacao ==0) {
+                    Toast.makeText(this, "Algum dos campos não se encontram ainda preenchidos ou o email inserido não é válido",Toast.LENGTH_LONG).show()
+
+                }else{
+                    Toast.makeText(this, " O email inserido não é válido",Toast.LENGTH_LONG).show()
+                }
+
+
+
+          }else{
+              val intent = Intent(this, Opiniao::class.java)
+              intent.putExtra("nome", nome)
+              intent.putExtra("classificacao", classificacao)
+              intent.putExtra("comentario", comentarios)
+              startActivity(intent)
+          }
 
 
         }

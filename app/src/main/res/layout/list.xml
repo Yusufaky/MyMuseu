@@ -20,14 +20,19 @@
             android:layout_height="wrap_content"
             android:text="TextView" />
 
-        <TextView
-            android:id="@+id/classificacao"
-            android:textColor="@color/corTexto"
-            android:fontFamily="@string/fonte"
-            android:textSize="@dimen/descricoes"
+<!--       /*<TextView-->
+<!--            android:id="@+id/classificacao"-->
+<!--            android:textColor="@color/corTexto"-->
+<!--            android:fontFamily="@string/fonte"-->
+<!--            android:textSize="@dimen/descricoes"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="TextView" />-->
+        <RatingBar
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="73dp"
+            android:numStars="5"/>
 
         <TextView
             android:id="@+id/nome"

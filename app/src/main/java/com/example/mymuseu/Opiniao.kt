@@ -21,7 +21,9 @@ class Opiniao : AppCompatActivity() {
 
         if (null != extras) {
             val nome = extras?.getString("nome")
-            adapter.update(nome.toString(), "teste", "teste")
+            val comentario = extras?.getString("comentario")
+            val classificacao = extras?.getFloat("classificacao")
+            adapter.update(nome.toString(), comentario.toString(), classificacao)
 
         }
 
