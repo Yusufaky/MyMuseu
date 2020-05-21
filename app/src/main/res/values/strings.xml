@@ -19,7 +19,7 @@
     <string name="mapa_btn" translatable="false">Mapa</string>
     <string name="opiniao_btn">Opinião</string>
     <string name="qrcode_btn" translatable="false">QRCODE</string>
-    <string name="titulo_Sala_QRCODE">2º Guerra Mundial</string>
+    <string name="titulo_Sala_QRCODE">Sala da 2º Guerra Mundial</string>
     <string name="descricao_Sala_QRCODE">Sala explicativa da 2º Guerra mundial possui 40 quadros tendo como tempo medio de visita 20 minutos.</string>
     <string name="exposi_o_temporaria_Main">Exposição Temporaria:</string>
     <string name="quadros_de_edvard_munch">Quadros de Edvard Munch</string>
