@@ -3,7 +3,7 @@
     <string name="fonte" translatable="false">sans-serif-medium</string>
     <string name="desc_QRcode">Para uma melhor experiencia nas visita do museu está disponivel uma serie de qrcodes onde estão disponivel informações sobre salas ou sobre coleções dependendo do que for lido</string>
     <string name="btn_QRcode">Fazer o Scan</string>
-    <string name="titulo_Main">Bem Vindo ao My Museum</string>
+    <string name="titulo_Main">Bem-Vindo ao My Museum</string>
     <string name="enviar_novaOpiniao">Enviar</string>
     <string name="opiniao_txt">Opinião</string>
     <string name="e_mail_txt">E-mail</string>
@@ -32,4 +32,5 @@
     <string name="MapaMain" translatable="false">Mapa</string>
     <string name="naoPreenche" >Algum dos campos não se encontram ainda preenchidos ou o email inserido não é válido</string>
     <string name="naoEmail" >O email inserido não é válido</string>
+    <string name="main_2_guerra_mundial">2º Guerra Mundial</string>
 </resources>

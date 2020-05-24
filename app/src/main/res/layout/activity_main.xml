@@ -78,7 +78,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@string/fonte"
-        android:text="2º Guerra Mundial ."
+        android:text="@string/main_2_guerra_mundial"
         android:textColor="@color/corTexto"
         android:textSize="@dimen/main"
         app:layout_constraintStart_toStartOf="parent"
