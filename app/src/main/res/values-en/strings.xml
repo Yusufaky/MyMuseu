@@ -28,4 +28,6 @@
     <string name="naoPreenche">Some of the fields are not yet filled out or the email entered is not valid</string>
     <string name="naoEmail">The email entered is not valid</string>
     <string name="main_2_guerra_mundial">2nd World War</string>
+    <string name="MapaMain">Map</string>
+
 </resources>
