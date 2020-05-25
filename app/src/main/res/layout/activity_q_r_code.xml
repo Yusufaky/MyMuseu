@@ -11,16 +11,15 @@
         android:id="@+id/btn_scan"
         android:layout_width="126dp"
         android:layout_height="52dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/btn_QRcode"
-        android:fontFamily="@string/fonte"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="143dp"
         android:background="@drawable/designbutton"
+        android:fontFamily="@string/fonte"
+        android:text="@string/btn_QRcode"
         android:textColor="@color/corTexto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgQRcode" />
 
     <ImageView

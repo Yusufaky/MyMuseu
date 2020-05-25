@@ -57,97 +57,98 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/museu_traje" />
 
-    <TextView
-        android:id="@+id/Titulo_Main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/titulo_Main"
-        android:textSize="@dimen/titulos"
-        android:textColor="@color/corTexto"
-        android:fontFamily="@string/fonte"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mapa" />
-
-    <TextView
-        android:id="@+id/tempMain"
-        android:layout_width="305dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="394dp"
         android:layout_marginTop="10dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/main_2_guerra_mundial"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/main"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descricaoMain" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_mapa"
+        tools:layout_editor_absoluteX="1dp">
 
-    <TextView
-        android:id="@+id/descricaoMain"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/exposi_o_temporaria_Main"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/descricoes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Titulo_Main" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tempMain2"
-        android:layout_width="294dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/quadros_de_edvard_munch"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/main"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descricaoMain2" />
+            <TextView
+                android:id="@+id/Titulo_Main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/titulo_Main"
+                android:layout_gravity="center"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/titulos" />
 
-    <TextView
-        android:id="@+id/descricaoMain2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/exposi_o_temporaria_Main"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/descricoes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tempMain" />
+            <TextView
+                android:id="@+id/descricaoMain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
 
-    <TextView
-        android:id="@+id/tempMain3"
-        android:layout_width="294dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/os_descobrimentos"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/main"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descricaoMain3" />
+                android:fontFamily="@string/fonte"
+                android:text="@string/exposi_o_temporaria_Main"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/descricoes" />
 
-    <TextView
-        android:id="@+id/descricaoMain3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@string/fonte"
-        android:text="@string/exposi_o_temporaria_Main"
-        android:textColor="@color/corTexto"
-        android:textSize="@dimen/descricoes"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tempMain2" />
+            <TextView
+                android:id="@+id/tempMain3"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/os_descobrimentos"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/main" />
+
+            <TextView
+                android:id="@+id/descricaoMain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/exposi_o_temporaria_Main"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/descricoes" />
+
+            <TextView
+                android:id="@+id/tempMain2"
+                android:layout_width="294dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/quadros_de_edvard_munch"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/main" />
+
+            <TextView
+                android:id="@+id/descricaoMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/exposi_o_temporaria_Main"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/descricoes" />
+
+            <TextView
+                android:id="@+id/tempMain"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@string/fonte"
+                android:text="@string/main_2_guerra_mundial"
+                android:textColor="@color/corTexto"
+                android:textSize="@dimen/main" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
