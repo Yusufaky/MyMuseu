@@ -4,7 +4,7 @@
     <string name="desc_QRcode">Para uma melhor experiência na visita do museu estará disponivel uma série de qrcodes onde é possível visualizar
         informações sobre salas ou sobre coleções dependendo do que for lido</string>
     <string name="btn_QRcode">Fazer o Scan</string>
-    <string name="titulo_Main">Bem-Vindo ao My Museum</string>
+    <string name="titulo_Main">Bem-Vindo ao My Museu</string>
     <string name="enviar_novaOpiniao">Enviar</string>
     <string name="opiniao_txt">Opinião</string>
     <string name="e_mail_txt">E-mail</string>
@@ -34,4 +34,6 @@
     <string name="naoPreenche" >Algum dos campos não se encontram ainda preenchidos ou o email inserido não é válido</string>
     <string name="naoEmail" >O email inserido não é válido</string>
     <string name="main_2_guerra_mundial">2º Guerra Mundial</string>
+    <string name="data1_main" translatable="false">30/6/2020</string>
+    <string name="maindaota2" translatable="false">31/10/2020</string>
 </resources>

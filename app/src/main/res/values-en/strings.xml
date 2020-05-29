@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Museu</string>
+    <string name="app_name">My Museum</string>
     <string name="desc_QRcode">For a better experience when visiting the museum, a series of qrcodes is available where information about rooms or collections is available depending on what is read</string>
     <string name="btn_QRcode">" Scan"</string>
     <string name="titulo_Main">" Welcome to My Museum"</string>

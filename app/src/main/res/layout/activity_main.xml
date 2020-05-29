@@ -14,10 +14,10 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
-        android:text="@string/mapa_btn"
-        android:fontFamily="@string/fonte"
-        android:textColor="@color/corTexto"
         android:background="@drawable/designbutton"
+        android:fontFamily="@string/fonte"
+        android:text="@string/mapa_btn"
+        android:textColor="@color/corTexto"
         app:layout_constraintEnd_toStartOf="@+id/btn_qrcode"
         app:layout_constraintStart_toEndOf="@+id/btn_opiniao"
         app:layout_constraintTop_toBottomOf="@+id/imgMain" />
@@ -28,9 +28,9 @@
         android:layout_height="0dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
-        android:text="@string/opiniao_btn"
-        android:fontFamily="@string/fonte"
         android:background="@drawable/designbutton"
+        android:fontFamily="@string/fonte"
+        android:text="@string/opiniao_btn"
         android:textColor="@color/corTexto"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMain" />
@@ -41,10 +41,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="29dp"
-        android:text="@string/qrcode_btn"
         android:background="@drawable/designbutton"
-        android:textColor="@color/corTexto"
         android:fontFamily="@string/fonte"
+        android:text="@string/qrcode_btn"
+        android:textColor="@color/corTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgMain" />
 
@@ -57,78 +57,108 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/museu_traje" />
 
-    <ScrollView
-        android:layout_width="match_parent"
+
+    <TextView
+        android:id="@+id/Titulo_Main"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/btn_mapa">
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/titulo_Main"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/titulos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mapa" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <TextView
+        android:id="@+id/descricaoMain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Titulo_Main"
+        android:layout_gravity="left"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/exposi_o_temporaria_Main"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Main" />
 
-            <TextView
-                android:id="@+id/Titulo_Main"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@string/fonte"
-                android:text="@string/titulo_Main"
-                android:textColor="@color/corTexto"
-                android:layout_gravity="center"
-                android:textSize="@dimen/titulos" />
+    <TextView
+        android:id="@+id/datamain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Titulo_Main"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/maindaota2"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Titulo_Main" />
 
-            <TextView
-                android:id="@+id/descricaoMain2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@string/fonte"
-                android:text="@string/exposi_o_temporaria_Main"
-                android:textColor="@color/corTexto"
-                android:textSize="@dimen/descricoes"
-                android:layout_below="@id/Titulo_Main"/>
+    <TextView
+        android:id="@+id/datamain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Titulo_Main"
+        android:layout_gravity="right"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/data1_main"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMain" />
 
-            <TextView
-                android:id="@+id/tempMain2"
-                android:layout_width="294dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@string/fonte"
-                android:text="@string/quadros_de_edvard_munch"
-                android:textColor="@color/corTexto"
-                android:textSize="@dimen/main"
-                android:layout_below="@id/descricaoMain2"/>
+    <TextView
+        android:id="@+id/tempMain2"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricaoMain2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/quadros_de_edvard_munch"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoMain" />
 
-            <TextView
-                android:id="@+id/descricaoMain"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@string/fonte"
-                android:text="@string/exposi_o_temporaria_Main"
-                android:textColor="@color/corTexto"
-                android:textSize="@dimen/descricoes"
-                android:layout_below="@id/tempMain2"/>
+    <TextView
+        android:id="@+id/descricaoMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tempMain2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/exposi_o_temporaria_Main"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/descricoes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tempMain" />
 
-            <TextView
-                android:id="@+id/tempMain"
-                android:layout_width="305dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@string/fonte"
-                android:text="@string/main_2_guerra_mundial"
-                android:textColor="@color/corTexto"
-                android:textSize="@dimen/main"
-                android:layout_below="@id/descricaoMain"/>
-
-        </LinearLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/tempMain"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descricaoMain"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@string/fonte"
+        android:text="@string/main_2_guerra_mundial"
+        android:textColor="@color/corTexto"
+        android:textSize="@dimen/main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descricaoMain2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
